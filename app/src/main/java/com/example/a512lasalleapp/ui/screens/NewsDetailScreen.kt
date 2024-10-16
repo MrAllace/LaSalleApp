@@ -12,12 +12,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
+import com.example.a512lasalleapp.ui.components.CardImage
 import com.example.a512lasalleapp.ui.utils.newsList
 
 @Composable
-fun NewsDetailScreen(newsId:Int,innerPadding : PaddingValues){
+fun NewsDetailScreen(newsId : Int, innerPadding : PaddingValues){
     val news = newsList.first { it.id == newsId }
 
     Column(

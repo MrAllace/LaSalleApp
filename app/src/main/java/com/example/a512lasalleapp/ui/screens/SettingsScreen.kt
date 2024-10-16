@@ -15,8 +15,8 @@ import com.example.a512lasalleapp.ui.theme._512LaSalleAppTheme
 import com.example.a512lasalleapp.ui.utils.studentsList
 
 @Composable
-fun SettingsScreen(studentId : Int, innerPadding : PaddingValues){
-    val student = studentsList.first { it.id == studentId }
+fun SettingsScreen(innerPadding : PaddingValues){
+    //val student = studentsList.first { it.id == studentId }
     ScreenTemplate(innerPadding = innerPadding, header = {
         Row (
             modifier = Modifier.padding(10.dp),
@@ -35,6 +35,6 @@ fun SettingsScreen(studentId : Int, innerPadding : PaddingValues){
 @Composable
 fun SettingsScreenPreview() {
     _512LaSalleAppTheme {
-        SettingsScreen(0, innerPadding = PaddingValues(0.dp))
+        SettingsScreen(innerPadding = PaddingValues(0.dp))
     }
 }

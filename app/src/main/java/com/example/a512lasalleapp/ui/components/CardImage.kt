@@ -38,7 +38,7 @@ fun CardImage(news: News, onClick : (News)->Unit){
 @Preview
 @Composable
 fun CardImagePreview(){
-    CardImage(news = newsList[0]){ news->
+    CardImage(news = newsList[1]){ news->
         println(news.title)
         //navegacion
     }

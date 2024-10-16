@@ -113,7 +113,7 @@ fun HomeScreen(innerPadding: PaddingValues, navController: NavController) {
                         fontSize = 18.sp
                     )
                     Text(
-                        text = "Juan Frausto",
+                        text = "Victor Manuel",
                         color = Color.White,
                         fontSize = 24.sp,
                         fontWeight = FontWeight.Bold,
@@ -126,7 +126,7 @@ fun HomeScreen(innerPadding: PaddingValues, navController: NavController) {
                     modifier = Modifier
                         .size(45.dp)
                         .clickable {
-                            Log.i("HomeScreen", "Cerrando sesion")
+                            Log.i("HomeScreen", "Closing session")
                         },
                     tint = Color.White
                 )
@@ -150,8 +150,8 @@ fun HomeScreen(innerPadding: PaddingValues, navController: NavController) {
                 horizontalArrangement = Arrangement.SpaceAround
             ) {
                 // Widget
-                Widget(icon = Icons.Default.DateRange, text = "Sin eventos")
-                Widget(icon = Task, text = "2 tareas")
+                Widget(icon = Icons.Default.DateRange, text = "No events")
+                Widget(icon = Task, text = "2 homeworks")
                 Widget(icon = Cash, text = stringResource(id = R.string.cash_text))
             }
         }
@@ -181,7 +181,7 @@ fun HomeScreen(innerPadding: PaddingValues, navController: NavController) {
                     }
                 }
                 Text(
-                    text = "Comunidad",
+                    text = "Community",
                     modifier = Modifier.padding(top = 20.dp),
                     style = MaterialTheme.typography.titleLarge
                 )

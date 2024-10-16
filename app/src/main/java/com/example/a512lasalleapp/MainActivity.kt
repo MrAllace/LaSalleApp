@@ -104,25 +104,34 @@ class MainActivity : ComponentActivity() {
                         composable(route = Screens.Home.route) {
                             HomeScreen(innerPadding = innerPadding, navController = navController)
                         }
-                        composable(route = Screens.Calendar.route){
+                        composable(route = Screens.Calendar.route){ // ------------------------------ CALENDAR ---------------------
                             CalendarScreen(innerPadding = innerPadding)
                         }
-                        composable(
-                            route = Screens.Grades.route+"/{id}",
-                            arguments = listOf(
+                        composable(  // ------------------------------ GRADES ---------------------
+                            route = Screens.Grades.route,
+                            /*arguments = listOf(
                                 navArgument("id"){
                                     type = NavType.IntType
                                     nullable = false
                                 }
-                            )
+                            )*/
                         ){
-                            val id = it.arguments?.getInt("id",0) ?: 0
-                            GradesScreen(id,innerPadding = innerPadding)
+                            //val id = it.arguments?.getInt("id",0) ?: 0
+                            GradesScreen(innerPadding = innerPadding)
                         }
-                        composable(route = Screens.Settings.route) {
-                            SettingsScreen(0,innerPadding = innerPadding)
+                        composable( // ------------------------------ SETTINGS ---------------------
+                            route = Screens.Settings.route,
+                            /*arguments = listOf(
+                                navArgument("id") {
+                                    type = NavType.IntType
+                                    nullable = false
+                                }
+                            )*/
+                        ) {
+                            //val id = it.arguments?.getInt("id", 0) ?: 0
+                            SettingsScreen(innerPadding = innerPadding)
                         }
-                        composable(
+                        composable( // ------------------------------ NEWS ---------------------
                             route = Screens.NewsDetail.route+"/{id}",
                             arguments = listOf(
                                 navArgument("id"){
