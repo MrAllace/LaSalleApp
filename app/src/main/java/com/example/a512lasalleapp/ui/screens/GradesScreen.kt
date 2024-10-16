@@ -14,6 +14,7 @@ import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
+import androidx.compose.material3.Divider
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -53,85 +54,116 @@ fun GradesScreen(innerPadding: PaddingValues) {
                     fontSize = 24.sp
                 )
                 Text(
-                    text = "Student : Victor Manuel",
+                    text = "Student : Victor Manuel Quesada",
                     color = Color.White,
-                    fontSize = 12.sp
+                    fontSize = 18.sp
                 )
                 Text(
-                    text = "Birth date : 12 / 08 / 2002",
+                    text = "Career : Software engineering",
                     color = Color.White,
-                    fontSize = 12.sp
+                    fontSize = 18.sp
                 )
                 Text(
-                    text = "Email : victor@hotmail.com",
+                    text = "Semester : 5th",
                     color = Color.White,
-                    fontSize = 12.sp
+                    fontSize = 18.sp
+                )
+                Text(
+                    text = "GPA : 9.8",
+                    color = Color.White,
+                    fontSize = 18.sp
                 )
             }
-            AsyncImage(
-                model = ImageRequest.Builder(LocalContext.current)
-                    .data("https://parspng.com/wp-content/uploads/2022/12/studentpng.parspng.com-9.png")
-                    .build(),
-                contentDescription = "Student",
-                modifier = Modifier.fillMaxWidth()
-                    .offset(y = 20.dp)
-                    .clip(RoundedCornerShape(
-                        bottomStart = 25.dp,
-                        bottomEnd = 25.dp,
-                        topStart = 25.dp,
-                        topEnd = 25.dp
-                    )
-                ).background(Color.White)
-                    .height(150.dp),
-                contentScale = ContentScale.FillBounds
-            )
         }
-
-
     }, body = {
-
         Column (
-            modifier = Modifier.padding(10.dp).fillMaxWidth().height(600.dp)
+            modifier = Modifier.padding(15.dp).fillMaxWidth().height(600.dp)
         ){
             Text(
-                text = "Options",
+                text = "Courses",
                 fontSize = 24.sp,
                 modifier = Modifier.padding(10.dp)
             )
+
+            Divider(modifier = Modifier.offset(y = -10.dp).padding(vertical = 10.dp))
             Row (
-                modifier = Modifier.padding(10.dp)
+                modifier = Modifier.padding(horizontal = 5.dp)
             ){
                 Text(
-                    text = "Change password",
+                    text = "Python",
                     fontSize = 16.sp,
                 )
-                Spacer(modifier = Modifier.padding(25.dp))
+                Spacer(modifier = Modifier.padding(horizontal = 65.dp))
                 OutlinedButton (
                     onClick = {},
                     modifier = Modifier.offset(y = -10.dp)
                 ){
-                    Text("Change")
+                    Text("View")
                 }
             }
             Row (
-                modifier = Modifier.padding(10.dp)
+                modifier = Modifier.padding(horizontal = 5.dp)
             ){
                 Text(
-                    text = "Change theme",
+                    text = "Artificial inteligence",
                     fontSize = 16.sp,
                 )
-                Spacer(modifier = Modifier.padding(39.dp))
+                Spacer(modifier = Modifier.padding(horizontal = 12.dp))
                 OutlinedButton (
                     onClick = {},
                     modifier = Modifier.offset(y = -10.dp)
                 ){
-                    Text("Change")
+                    Text("View")
                 }
             }
+            Row (
+                modifier = Modifier.padding(horizontal = 5.dp)
+            ){
+                Text(
+                    text = "Android apps",
+                    fontSize = 16.sp,
+                )
+                Spacer(modifier = Modifier.padding(horizontal = 40.dp))
+                OutlinedButton (
+                    onClick = {},
+                    modifier = Modifier.offset(y = -10.dp)
+                ){
+                    Text("View")
+                }
+            }
+            Row (
+                modifier = Modifier.padding(horizontal = 5.dp)
+            ){
+                Text(
+                    text = "Low level coding",
+                    fontSize = 16.sp,
+                )
+                Spacer(modifier = Modifier.padding(horizontal = 28.dp))
+                OutlinedButton (
+                    onClick = {},
+                    modifier = Modifier.offset(y = -10.dp)
+                ){
+                    Text("View")
+                }
+            }
+            Row (
+                modifier = Modifier.padding(horizontal = 5.dp)
+            ){
+                Text(
+                    text = "Java coding",
+                    fontSize = 16.sp,
+                )
+                Spacer(modifier = Modifier.padding(horizontal = 45.dp))
+                OutlinedButton (
+                    onClick = {},
+                    modifier = Modifier.offset(y = -10.dp)
+                ){
+                    Text("View")
+                }
+            }
+
 
         }
-
-
     })
 }
 
