@@ -29,6 +29,8 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.example.a512lasalleapp.ui.screens.CalendarScreen
+import com.example.a512lasalleapp.ui.screens.ChangePasswordScreen
+import com.example.a512lasalleapp.ui.screens.ChangeThemeScreen
 import com.example.a512lasalleapp.ui.screens.GradesDetailScreen
 import com.example.a512lasalleapp.ui.screens.GradesScreen
 import com.example.a512lasalleapp.ui.screens.HomeScreen
@@ -130,9 +132,19 @@ class MainActivity : ComponentActivity() {
                             )*/
                         ) {
                             //val id = it.arguments?.getInt("id", 0) ?: 0
-                            SettingsScreen(innerPadding = innerPadding)
+                            SettingsScreen(innerPadding = innerPadding, navController = navController)
                         }
-                        composable( // ------------------------------ NEWS ---------------------
+                        composable( // ------------------------------ CHANGE PASSWORD ---------------------
+                            route = Screens.ChangePassword.route,
+                        ) {
+                            ChangePasswordScreen(innerPadding = innerPadding)
+                        }
+                        composable( // ------------------------------ CHANGE THEME ---------------------
+                            route = Screens.ChangeTheme.route,
+                        ) {
+                            ChangeThemeScreen(innerPadding = innerPadding)
+                        }
+                        composable( // ------------------------------ NEWS DETAIL---------------------
                             route = Screens.NewsDetail.route+"/{id}",
                             arguments = listOf(
                                 navArgument("id"){
@@ -144,7 +156,7 @@ class MainActivity : ComponentActivity() {
                             val id = it.arguments?.getInt("id",0) ?: 0
                             NewsDetailScreen(newsId=id,innerPadding = innerPadding)
                         }
-                        composable( // ------------------------------ NEWS ---------------------
+                        composable( // ------------------------------ GRADES DETAIL ---------------------
                             route = Screens.GradesDetail.route+"/{id}",
                             arguments = listOf(
                                 navArgument("id"){

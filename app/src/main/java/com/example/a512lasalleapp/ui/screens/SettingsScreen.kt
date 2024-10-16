@@ -14,7 +14,6 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
@@ -23,13 +22,16 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import com.example.a512lasalleapp.ui.components.ScreenTemplate
 import com.example.a512lasalleapp.ui.theme._512LaSalleAppTheme
+import com.example.a512lasalleapp.ui.utils.Screens
 
 @Composable
-fun SettingsScreen(innerPadding : PaddingValues){
+fun SettingsScreen(innerPadding : PaddingValues, navController: NavController){
     //val student = studentsList.first { it.id == studentId }
     ScreenTemplate(innerPadding = innerPadding, header = {
         Row  (
@@ -100,7 +102,7 @@ fun SettingsScreen(innerPadding : PaddingValues){
                 )
                 Spacer(modifier = Modifier.padding(25.dp))
                 OutlinedButton (
-                    onClick = {},
+                    onClick = { navController.navigate(Screens.ChangePassword.route) },
                     modifier = Modifier.offset(y = -10.dp)
                 ){
                     Text("Change")
@@ -115,7 +117,7 @@ fun SettingsScreen(innerPadding : PaddingValues){
                 )
                 Spacer(modifier = Modifier.padding(39.dp))
                 OutlinedButton (
-                    onClick = {},
+                    onClick = { navController.navigate(Screens.ChangeTheme.route)  },
                     modifier = Modifier.offset(y = -10.dp)
                 ){
                     Text("Change")
@@ -134,7 +136,8 @@ fun SettingsScreen(innerPadding : PaddingValues){
 )
 @Composable
 fun SettingsScreenPreview() {
+    val navController = rememberNavController()
     _512LaSalleAppTheme {
-        SettingsScreen(innerPadding = PaddingValues(0.dp))
+        SettingsScreen(innerPadding = PaddingValues(0.dp), navController = navController)
     }
 }
