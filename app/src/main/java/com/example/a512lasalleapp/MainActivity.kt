@@ -29,6 +29,7 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.example.a512lasalleapp.ui.screens.CalendarScreen
+import com.example.a512lasalleapp.ui.screens.GradesDetailScreen
 import com.example.a512lasalleapp.ui.screens.GradesScreen
 import com.example.a512lasalleapp.ui.screens.HomeScreen
 import com.example.a512lasalleapp.ui.screens.NewsDetailScreen
@@ -117,7 +118,7 @@ class MainActivity : ComponentActivity() {
                             )*/
                         ){
                             //val id = it.arguments?.getInt("id",0) ?: 0
-                            GradesScreen(innerPadding = innerPadding)
+                            GradesScreen(innerPadding = innerPadding,navController)
                         }
                         composable( // ------------------------------ SETTINGS ---------------------
                             route = Screens.Settings.route,
@@ -142,6 +143,18 @@ class MainActivity : ComponentActivity() {
                         ) {
                             val id = it.arguments?.getInt("id",0) ?: 0
                             NewsDetailScreen(newsId=id,innerPadding = innerPadding)
+                        }
+                        composable( // ------------------------------ NEWS ---------------------
+                            route = Screens.GradesDetail.route+"/{id}",
+                            arguments = listOf(
+                                navArgument("id"){
+                                    type = NavType.IntType
+                                    nullable = false
+                                }
+                            )
+                        ) {
+                            val id = it.arguments?.getInt("id",0) ?: 0
+                            GradesDetailScreen(coursesId = id,innerPadding = innerPadding)
                         }
                     }
 

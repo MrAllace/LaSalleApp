@@ -27,7 +27,6 @@ import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import com.example.a512lasalleapp.ui.components.ScreenTemplate
 import com.example.a512lasalleapp.ui.theme._512LaSalleAppTheme
-import com.example.a512lasalleapp.ui.utils.studentsList
 
 @Composable
 fun SettingsScreen(innerPadding : PaddingValues){

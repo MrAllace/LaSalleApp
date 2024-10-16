@@ -16,6 +16,49 @@ import com.example.a512lasalleapp.models.News
 import com.example.a512lasalleapp.models.Students
 import java.util.Date
 
+val coursesList = listOf(
+    Courses(
+        id = 1,
+        name = "Python",
+        gpa1 = 9.2F,
+        gpa2 = 9.6F,
+        gpa3 = 10F,
+        gpa = 9.8F
+    ),
+    Courses(
+        id = 2,
+        name = "Artificial inteligence",
+        gpa1 = 7.8F,
+        gpa2 = 8.6F,
+        gpa3 = 9.1F,
+        gpa = 8.8F
+    ),
+    Courses(
+        id = 3,
+        name = "Android apps",
+        gpa1 = 9.5F,
+        gpa2 = 9.1F,
+        gpa3 = 8.8F,
+        gpa = 9F
+    ),
+    Courses(
+        id = 4,
+        name = "Low level coding",
+        gpa1 = 8.6F,
+        gpa2 = 6.6F,
+        gpa3 = 9.8F,
+        gpa = 8.9F
+    ),
+    Courses(
+        id = 5,
+        name = "Java coding",
+        gpa1 = 9.8F,
+        gpa2 = 9.9F,
+        gpa3 = 10F,
+        gpa = 9.9F
+    ),
+)
+/*                                      --------- NOT USED ------
 val studentsList = listOf(
     Students(
         id = 1,
@@ -48,7 +91,7 @@ val studentsList = listOf(
         image = "https://yt3.googleusercontent.com/sNaVUqr3t-QV4Yh_t-Bk_hMPO_puyWUNmQPuFrSoPGaa_HfNPB38q7XaaNrmbm27woBv0JJMmj4=s900-c-k-c0x00ffffff-no-rj"
     ),
 
-)
+) */
 
 val newsList = listOf(
     News(

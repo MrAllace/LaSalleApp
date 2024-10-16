@@ -29,16 +29,18 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import com.example.a512lasalleapp.R
 import com.example.a512lasalleapp.ui.components.ScreenTemplate
 import com.example.a512lasalleapp.ui.theme._512LaSalleAppTheme
-import com.example.a512lasalleapp.ui.utils.studentsList
+import com.example.a512lasalleapp.ui.utils.Screens
 import org.intellij.lang.annotations.JdkConstants.HorizontalAlignment
 
 @Composable
-fun GradesScreen(innerPadding: PaddingValues) {
+fun GradesScreen(innerPadding: PaddingValues, navController: NavController) {
     //val student = studentsList.first { it.id == studentId }
     ScreenTemplate(innerPadding = innerPadding, header = {
         Row  (
@@ -95,7 +97,7 @@ fun GradesScreen(innerPadding: PaddingValues) {
                 )
                 Spacer(modifier = Modifier.padding(horizontal = 65.dp))
                 OutlinedButton (
-                    onClick = {},
+                    onClick = { navController.navigate(Screens.GradesDetail.route+"/${1}") },
                     modifier = Modifier.offset(y = -10.dp)
                 ){
                     Text("View")
@@ -110,7 +112,7 @@ fun GradesScreen(innerPadding: PaddingValues) {
                 )
                 Spacer(modifier = Modifier.padding(horizontal = 12.dp))
                 OutlinedButton (
-                    onClick = {},
+                    onClick = { navController.navigate(Screens.GradesDetail.route+"/${2}") },
                     modifier = Modifier.offset(y = -10.dp)
                 ){
                     Text("View")
@@ -125,7 +127,7 @@ fun GradesScreen(innerPadding: PaddingValues) {
                 )
                 Spacer(modifier = Modifier.padding(horizontal = 40.dp))
                 OutlinedButton (
-                    onClick = {},
+                    onClick = { navController.navigate(Screens.GradesDetail.route+"/${3}") },
                     modifier = Modifier.offset(y = -10.dp)
                 ){
                     Text("View")
@@ -140,7 +142,7 @@ fun GradesScreen(innerPadding: PaddingValues) {
                 )
                 Spacer(modifier = Modifier.padding(horizontal = 28.dp))
                 OutlinedButton (
-                    onClick = {},
+                    onClick = { navController.navigate(Screens.GradesDetail.route+"/${4}") },
                     modifier = Modifier.offset(y = -10.dp)
                 ){
                     Text("View")
@@ -155,7 +157,7 @@ fun GradesScreen(innerPadding: PaddingValues) {
                 )
                 Spacer(modifier = Modifier.padding(horizontal = 45.dp))
                 OutlinedButton (
-                    onClick = {},
+                    onClick = { navController.navigate(Screens.GradesDetail.route+"/${5}")  },
                     modifier = Modifier.offset(y = -10.dp)
                 ){
                     Text("View")
@@ -173,7 +175,8 @@ fun GradesScreen(innerPadding: PaddingValues) {
 )
 @Composable
 fun GradesScreenPreview() {
+    val navController = rememberNavController()
     _512LaSalleAppTheme {
-        GradesScreen(innerPadding = PaddingValues(0.dp))
+        GradesScreen(innerPadding = PaddingValues(0.dp), navController = navController)
     }
 }
