@@ -22,7 +22,7 @@ fun ChangeThemeScreen(innerPadding: PaddingValues) {
         Row (
             modifier = Modifier.padding(40.dp)
         ){
-            Text(text = "Change Theme", color = Color.White)
+            Text(text = "Cambiar tema", color = Color.White)
             Switch(
                 modifier = Modifier.offset(y = -15.dp, x = 15.dp),
                 checked = true,

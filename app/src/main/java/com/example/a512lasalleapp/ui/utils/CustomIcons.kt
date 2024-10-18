@@ -68,7 +68,7 @@ public val Task: ImageVector
             return _Task!!
         }
         _Task = ImageVector.Builder(
-            name = "Task",
+            name = "Tarea",
             defaultWidth = 24.dp,
             defaultHeight = 24.dp,
             viewportWidth = 960f,
@@ -130,7 +130,7 @@ public val Cash: ImageVector
             return _Cash!!
         }
         _Cash = ImageVector.Builder(
-            name = "Cash",
+            name = "Dinero",
             defaultWidth = 16.dp,
             defaultHeight = 16.dp,
             viewportWidth = 16f,

@@ -27,15 +27,15 @@ val coursesList = listOf(
     ),
     Courses(
         id = 2,
-        name = "Artificial inteligence",
-        gpa1 = 7.8F,
-        gpa2 = 8.6F,
-        gpa3 = 9.1F,
-        gpa = 8.8F
+        name = "Redes",
+        gpa1 = 10F,
+        gpa2 = 10F,
+        gpa3 = 10F,
+        gpa = 10F
     ),
     Courses(
         id = 3,
-        name = "Android apps",
+        name = "Android",
         gpa1 = 9.5F,
         gpa2 = 9.1F,
         gpa3 = 8.8F,
@@ -43,7 +43,7 @@ val coursesList = listOf(
     ),
     Courses(
         id = 4,
-        name = "Low level coding",
+        name = "Java",
         gpa1 = 8.6F,
         gpa2 = 6.6F,
         gpa3 = 9.8F,
@@ -51,47 +51,13 @@ val coursesList = listOf(
     ),
     Courses(
         id = 5,
-        name = "Java coding",
+        name = "Cristianismo",
         gpa1 = 9.8F,
         gpa2 = 9.9F,
         gpa3 = 10F,
         gpa = 9.9F
     ),
 )
-/*                                      --------- NOT USED ------
-val studentsList = listOf(
-    Students(
-        id = 1,
-        name = "Victor Quezada Feregrino",
-        birthDate = Date(2002 + 1900,2,21),
-        career = "Software Engineering",
-        semester = 5,
-        email = "victor@hotmail.com",
-        courses = mutableListOf(
-            Courses(1,"Python",10F,9.2F,8.1F, 9.1F),
-            Courses(2,"Kotlin",9.8F,8.1F,9.7F,8.7F),
-            Courses(3,"C",9.9F,10F,10F,9.9F),
-            Courses(4,"Vulkan",10F,10F,10F,10F)),
-        gpa = 9.6F,
-        image = "https://yt3.googleusercontent.com/sNaVUqr3t-QV4Yh_t-Bk_hMPO_puyWUNmQPuFrSoPGaa_HfNPB38q7XaaNrmbm27woBv0JJMmj4=s900-c-k-c0x00ffffff-no-rj"
-    ),
-    Students(
-        id = 1,
-        name = "Samuel Rodriguez",
-        birthDate = Date(2002 + 1900,8,5),
-        career = "Civil Engineering",
-        semester = 3,
-        email = "samrodriguez@hotmail.com",
-        courses = mutableListOf(
-            Courses(5,"Calculus",9F,7.1F,8.2F, 7.5F),
-            Courses(6,"Static",6.2F,5.1F,7.1F,8.7F),
-            Courses(7,"Thermodynamics",9.1F,8.1F,5.1F,6.5F),
-            Courses(1,"Python",7.2F,8.3F,10F,9.2F)),
-        gpa = 8.5F,
-        image = "https://yt3.googleusercontent.com/sNaVUqr3t-QV4Yh_t-Bk_hMPO_puyWUNmQPuFrSoPGaa_HfNPB38q7XaaNrmbm27woBv0JJMmj4=s900-c-k-c0x00ffffff-no-rj"
-    ),
-
-) */
 
 val newsList = listOf(
     News(

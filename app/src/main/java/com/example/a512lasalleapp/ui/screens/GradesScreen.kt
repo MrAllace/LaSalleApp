@@ -51,27 +51,27 @@ fun GradesScreen(innerPadding: PaddingValues, navController: NavController) {
             )
             {
                 Text(
-                    text = "Grades",
+                    text = "Calificaciones",
                     color = Color.White,
                     fontSize = 24.sp
                 )
                 Text(
-                    text = "Student : Victor Manuel Quesada",
+                    text = "Alumno : Marco Antonio Sánchez Murillo",
                     color = Color.White,
                     fontSize = 18.sp
                 )
                 Text(
-                    text = "Career : Software engineering",
+                    text = "Carrera : Ingenieria de Software",
                     color = Color.White,
                     fontSize = 18.sp
                 )
                 Text(
-                    text = "Semester : 5th",
+                    text = "Semestre : 5to",
                     color = Color.White,
                     fontSize = 18.sp
                 )
                 Text(
-                    text = "GPA : 9.8",
+                    text = "Promedio : 9.8",
                     color = Color.White,
                     fontSize = 18.sp
                 )
@@ -82,7 +82,7 @@ fun GradesScreen(innerPadding: PaddingValues, navController: NavController) {
             modifier = Modifier.padding(15.dp).fillMaxWidth().height(600.dp)
         ){
             Text(
-                text = "Courses",
+                text = "Cursos",
                 fontSize = 24.sp,
                 modifier = Modifier.padding(10.dp)
             )
@@ -107,10 +107,10 @@ fun GradesScreen(innerPadding: PaddingValues, navController: NavController) {
                 modifier = Modifier.padding(horizontal = 5.dp)
             ){
                 Text(
-                    text = "Artificial inteligence",
+                    text = "Redes",
                     fontSize = 16.sp,
                 )
-                Spacer(modifier = Modifier.padding(horizontal = 12.dp))
+                Spacer(modifier = Modifier.padding(horizontal = 68.dp))
                 OutlinedButton (
                     onClick = { navController.navigate(Screens.GradesDetail.route+"/${2}") },
                     modifier = Modifier.offset(y = -10.dp)
@@ -122,10 +122,10 @@ fun GradesScreen(innerPadding: PaddingValues, navController: NavController) {
                 modifier = Modifier.padding(horizontal = 5.dp)
             ){
                 Text(
-                    text = "Android apps",
+                    text = "Android",
                     fontSize = 16.sp,
                 )
-                Spacer(modifier = Modifier.padding(horizontal = 40.dp))
+                Spacer(modifier = Modifier.padding(horizontal = 61.dp))
                 OutlinedButton (
                     onClick = { navController.navigate(Screens.GradesDetail.route+"/${3}") },
                     modifier = Modifier.offset(y = -10.dp)
@@ -137,10 +137,10 @@ fun GradesScreen(innerPadding: PaddingValues, navController: NavController) {
                 modifier = Modifier.padding(horizontal = 5.dp)
             ){
                 Text(
-                    text = "Low level coding",
+                    text = "Java",
                     fontSize = 16.sp,
                 )
-                Spacer(modifier = Modifier.padding(horizontal = 28.dp))
+                Spacer(modifier = Modifier.padding(horizontal = 73.dp))
                 OutlinedButton (
                     onClick = { navController.navigate(Screens.GradesDetail.route+"/${4}") },
                     modifier = Modifier.offset(y = -10.dp)
@@ -152,10 +152,10 @@ fun GradesScreen(innerPadding: PaddingValues, navController: NavController) {
                 modifier = Modifier.padding(horizontal = 5.dp)
             ){
                 Text(
-                    text = "Java coding",
+                    text = "Cristianismo",
                     fontSize = 16.sp,
                 )
-                Spacer(modifier = Modifier.padding(horizontal = 45.dp))
+                Spacer(modifier = Modifier.padding(horizontal = 41.dp))
                 OutlinedButton (
                     onClick = { navController.navigate(Screens.GradesDetail.route+"/${5}")  },
                     modifier = Modifier.offset(y = -10.dp)

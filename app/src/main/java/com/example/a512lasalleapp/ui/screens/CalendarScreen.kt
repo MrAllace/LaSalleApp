@@ -28,13 +28,13 @@ fun CalendarScreen(innerPadding: PaddingValues) {
         ) {
             Text(
                 text = "Calendario",
-                color = Color.White,
+                color = Color.Gray,
                 style = MaterialTheme.typography.titleLarge
             )
             Text(
                 modifier = Modifier.padding(top = 10.dp),
                 text = "Enero",
-                color = Color.White,
+                color = Color.Gray,
                 style = MaterialTheme.typography.titleLarge
             )
             LazyRow(
@@ -48,7 +48,7 @@ fun CalendarScreen(innerPadding: PaddingValues) {
             }
         }
     }, body = {
-        Text("Hola")
+        Text("Mes en curso")
     })
 }
 

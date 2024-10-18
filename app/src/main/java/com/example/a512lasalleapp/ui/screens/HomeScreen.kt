@@ -117,7 +117,7 @@ fun HomeScreen(innerPadding: PaddingValues, navController: NavController) {
                         fontSize = 18.sp
                     )
                     Text(
-                        text = "Victor Manuel",
+                        text = "Marco Sanchez",
                         color = Color.White,
                         fontSize = 24.sp,
                         fontWeight = FontWeight.Bold,

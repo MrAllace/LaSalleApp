@@ -34,7 +34,7 @@ fun PaymentScreen(innerPadding : PaddingValues) {
         horizontalAlignment = Alignment.CenterHorizontally
     ){
         Text(
-            text = "Payments 2024",
+            text = "YA PAGA WEY",
             modifier = Modifier.padding(horizontal = 24.dp),
             style = MaterialTheme.typography.titleLarge,
             fontWeight = FontWeight.W900
@@ -44,8 +44,8 @@ fun PaymentScreen(innerPadding : PaddingValues) {
             modifier = Modifier.padding(horizontal = 10.dp)
         ){
             Text(
-                text = "January",
-                modifier = Modifier.padding(horizontal = 16.dp),
+                text = "Enero",
+                modifier = Modifier.padding(horizontal = 50.dp),
                 style = MaterialTheme.typography.bodyLarge
             )
             Spacer(modifier = Modifier.padding(horizontal = 60.dp))
@@ -59,8 +59,8 @@ fun PaymentScreen(innerPadding : PaddingValues) {
             modifier = Modifier.padding(horizontal = 10.dp)
         ){
             Text(
-                text = "February",
-                modifier = Modifier.padding(horizontal = 16.dp),
+                text = "Febrero",
+                modifier = Modifier.padding(horizontal = 44.dp),
                 style = MaterialTheme.typography.bodyLarge
             )
             Spacer(modifier = Modifier.padding(horizontal = 58.dp))
@@ -74,8 +74,8 @@ fun PaymentScreen(innerPadding : PaddingValues) {
             modifier = Modifier.padding(horizontal = 10.dp)
         ){
             Text(
-                text = "March",
-                modifier = Modifier.padding(horizontal = 16.dp),
+                text = "Marzo",
+                modifier = Modifier.padding(horizontal = 40.dp),
                 style = MaterialTheme.typography.bodyLarge
             )
             Spacer(modifier = Modifier.padding(horizontal = 69.dp))
@@ -89,8 +89,8 @@ fun PaymentScreen(innerPadding : PaddingValues) {
             modifier = Modifier.padding(horizontal = 10.dp)
         ){
             Text(
-                text = "April",
-                modifier = Modifier.padding(horizontal = 16.dp),
+                text = "Abril",
+                modifier = Modifier.padding(horizontal = 39.dp),
                 style = MaterialTheme.typography.bodyLarge
             )
             Spacer(modifier = Modifier.padding(horizontal = 76.dp))
@@ -104,8 +104,8 @@ fun PaymentScreen(innerPadding : PaddingValues) {
             modifier = Modifier.padding(horizontal = 10.dp)
         ){
             Text(
-                text = "May",
-                modifier = Modifier.padding(horizontal = 16.dp),
+                text = "Mayo",
+                modifier = Modifier.padding(horizontal = 35.dp),
                 style = MaterialTheme.typography.bodyLarge
             )
             Spacer(modifier = Modifier.padding(horizontal = 77.dp))
@@ -119,8 +119,8 @@ fun PaymentScreen(innerPadding : PaddingValues) {
             modifier = Modifier.padding(horizontal = 10.dp)
         ){
             Text(
-                text = "June",
-                modifier = Modifier.padding(horizontal = 16.dp),
+                text = "Junio",
+                modifier = Modifier.padding(horizontal = 37.dp),
                 style = MaterialTheme.typography.bodyLarge
             )
             Spacer(modifier = Modifier.padding(horizontal = 75.dp))
@@ -134,13 +134,13 @@ fun PaymentScreen(innerPadding : PaddingValues) {
             modifier = Modifier.padding(horizontal = 10.dp)
         ){
             Text(
-                text = "July",
-                modifier = Modifier.padding(horizontal = 16.dp),
+                text = "Julio",
+                modifier = Modifier.padding(horizontal = 37.dp),
                 style = MaterialTheme.typography.bodyLarge
             )
             Spacer(modifier = Modifier.padding(horizontal = 78.dp))
             Icon(
-                painter = painterResource(R.drawable.baseline_radio_button_unchecked_24),
+                painter = painterResource(R.drawable.baseline_check_circle_outline_24),
                 contentDescription = "Unchecked"
             )
 
@@ -149,13 +149,13 @@ fun PaymentScreen(innerPadding : PaddingValues) {
             modifier = Modifier.padding(horizontal = 10.dp)
         ){
             Text(
-                text = "August",
-                modifier = Modifier.padding(horizontal = 16.dp),
+                text = "Agosto",
+                modifier = Modifier.padding(horizontal = 41.dp),
                 style = MaterialTheme.typography.bodyLarge
             )
             Spacer(modifier = Modifier.padding(horizontal = 65.dp))
             Icon(
-                painter = painterResource(R.drawable.baseline_radio_button_unchecked_24),
+                painter = painterResource(R.drawable.baseline_check_circle_outline_24),
                 contentDescription = "Unchecked"
             )
 
@@ -164,13 +164,13 @@ fun PaymentScreen(innerPadding : PaddingValues) {
             modifier = Modifier.padding(horizontal = 10.dp)
         ){
             Text(
-                text = "September",
-                modifier = Modifier.padding(horizontal = 16.dp),
+                text = "Septiembre",
+                modifier = Modifier.padding(horizontal = 38.dp),
                 style = MaterialTheme.typography.bodyLarge
             )
             Spacer(modifier = Modifier.padding(horizontal = 49.dp))
             Icon(
-                painter = painterResource(R.drawable.baseline_radio_button_unchecked_24),
+                painter = painterResource(R.drawable.baseline_check_circle_outline_24),
                 contentDescription = "Unchecked"
             )
 
@@ -179,8 +179,8 @@ fun PaymentScreen(innerPadding : PaddingValues) {
             modifier = Modifier.padding(horizontal = 10.dp)
         ){
             Text(
-                text = "October",
-                modifier = Modifier.padding(horizontal = 16.dp),
+                text = "Octubre",
+                modifier = Modifier.padding(horizontal = 40.dp),
                 style = MaterialTheme.typography.bodyLarge
             )
             Spacer(modifier = Modifier.padding(horizontal = 62.dp))
@@ -194,8 +194,8 @@ fun PaymentScreen(innerPadding : PaddingValues) {
             modifier = Modifier.padding(horizontal = 10.dp)
         ){
             Text(
-                text = "November",
-                modifier = Modifier.padding(horizontal = 16.dp),
+                text = "Noviembre",
+                modifier = Modifier.padding(horizontal = 38.dp),
                 style = MaterialTheme.typography.bodyLarge
             )
             Spacer(modifier = Modifier.padding(horizontal = 52.dp))
@@ -209,8 +209,8 @@ fun PaymentScreen(innerPadding : PaddingValues) {
             modifier = Modifier.padding(horizontal = 10.dp)
         ){
             Text(
-                text = "December",
-                modifier = Modifier.padding(horizontal = 16.dp),
+                text = "Diciembre",
+                modifier = Modifier.padding(horizontal = 41.dp),
                 style = MaterialTheme.typography.bodyLarge
             )
             Spacer(modifier = Modifier.padding(horizontal = 52.dp))

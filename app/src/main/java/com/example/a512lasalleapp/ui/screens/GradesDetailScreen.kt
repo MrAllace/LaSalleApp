@@ -44,7 +44,7 @@ fun GradesDetailScreen(coursesId : Int, innerPadding : PaddingValues) {
             modifier = Modifier.padding(10.dp)
         ){
             Text(
-                text = "First partial",
+                text = "Primer parcial",
                 modifier = Modifier.padding(horizontal = 16.dp),
                 style = MaterialTheme.typography.bodyLarge
             )
@@ -59,7 +59,7 @@ fun GradesDetailScreen(coursesId : Int, innerPadding : PaddingValues) {
             modifier = Modifier.padding(10.dp)
         ){
             Text(
-                text = "Second partial",
+                text = "Segundo parcial",
                 modifier = Modifier.padding(horizontal = 16.dp),
                 style = MaterialTheme.typography.bodyLarge
             )
@@ -74,7 +74,7 @@ fun GradesDetailScreen(coursesId : Int, innerPadding : PaddingValues) {
             modifier = Modifier.padding(10.dp)
         ){
             Text(
-                text = "Third partial",
+                text = "Tercer parcial",
                 modifier = Modifier.padding(horizontal = 16.dp),
                 style = MaterialTheme.typography.bodyLarge
             )

@@ -31,20 +31,20 @@ fun ChangePasswordScreen(innerPadding: PaddingValues) {
             modifier = Modifier.padding(15.dp)
         ){
             Text(
-                text = "Change Password",
+                text = "Cambiar contraseña",
                 fontSize = 24.sp,
                 color = Color.White
             )
             Row (Modifier.padding(vertical = 15.dp)){
                 Text(
-                    text = "Insert new password: ",
+                    text = "Inserta la nueva contraseña: ",
                     fontSize = 14.sp,
                     color = Color.White
                 )
                 OutlinedTextField(
                     value = "",
                     onValueChange = {},
-                    label = { Text("NewPassword", fontSize = 12.sp) },
+                    label = { Text("Nueva contraseña", fontSize = 12.sp) },
                     placeholder = { Text("example@domain.com") },
                     singleLine = true,
                     modifier = Modifier
@@ -53,14 +53,14 @@ fun ChangePasswordScreen(innerPadding: PaddingValues) {
             }
             Row (Modifier.padding(vertical = 15.dp)){
                 Text(
-                    text = "Reinsert new password: ",
+                    text = "Repite la nueva contraseña: ",
                     fontSize = 14.sp,
                     color = Color.White
                 )
                 OutlinedTextField(
                     value = "",
                     onValueChange = {},
-                    label = { Text("NewPassword", fontSize = 12.sp) },
+                    label = { Text("Nueva contraseña", fontSize = 12.sp) },
                     placeholder = { Text("example@domain.com") },
                     singleLine = true,
                     modifier = Modifier
@@ -69,7 +69,7 @@ fun ChangePasswordScreen(innerPadding: PaddingValues) {
             }
             OutlinedButton(
                 onClick = {},
-            ) { Text(text = "Change Password", color = Color.White) }
+            ) { Text(text = "Cambiar contraseña", color = Color.White) }
 
 
         }

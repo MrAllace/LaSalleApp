@@ -42,22 +42,22 @@ fun SettingsScreen(innerPadding : PaddingValues, navController: NavController){
             )
             {
                 Text(
-                    text = "Settings",
+                    text = "Configuración",
                     color = Color.White,
                     fontSize = 24.sp
                 )
                 Text(
-                    text = "Student : Victor Manuel",
+                    text = "Alumno : Marco Antonio",
                     color = Color.White,
                     fontSize = 12.sp
                 )
                 Text(
-                    text = "Birth date : 12 / 08 / 2002",
+                    text = "Fecha de nacimiento : 18 / 10 / 2004",
                     color = Color.White,
                     fontSize = 12.sp
                 )
                 Text(
-                    text = "Email : victor@hotmail.com",
+                    text = "Email : marco@hotmail.com",
                     color = Color.White,
                     fontSize = 12.sp
                 )
@@ -66,7 +66,7 @@ fun SettingsScreen(innerPadding : PaddingValues, navController: NavController){
                 model = ImageRequest.Builder(LocalContext.current)
                     .data("https://parspng.com/wp-content/uploads/2022/12/studentpng.parspng.com-9.png")
                     .build(),
-                contentDescription = "Student",
+                contentDescription = "Alumno",
                 modifier = Modifier.fillMaxWidth()
                     .offset(y = 20.dp)
                     .clip(
@@ -89,7 +89,7 @@ fun SettingsScreen(innerPadding : PaddingValues, navController: NavController){
             modifier = Modifier.padding(10.dp).fillMaxWidth().height(600.dp)
         ){
             Text(
-                text = "Options",
+                text = "Opciones",
                 fontSize = 24.sp,
                 modifier = Modifier.padding(10.dp)
             )
@@ -97,7 +97,7 @@ fun SettingsScreen(innerPadding : PaddingValues, navController: NavController){
                 modifier = Modifier.padding(10.dp)
             ){
                 Text(
-                    text = "Change password",
+                    text = "Nueva contraseña",
                     fontSize = 16.sp,
                 )
                 Spacer(modifier = Modifier.padding(25.dp))
@@ -105,14 +105,14 @@ fun SettingsScreen(innerPadding : PaddingValues, navController: NavController){
                     onClick = { navController.navigate(Screens.ChangePassword.route) },
                     modifier = Modifier.offset(y = -10.dp)
                 ){
-                    Text("Change")
+                    Text("Cambiar")
                 }
             }
             Row (
                 modifier = Modifier.padding(10.dp)
             ){
                 Text(
-                    text = "Change theme",
+                    text = "Cambiar tema",
                     fontSize = 16.sp,
                 )
                 Spacer(modifier = Modifier.padding(39.dp))
@@ -120,7 +120,7 @@ fun SettingsScreen(innerPadding : PaddingValues, navController: NavController){
                     onClick = { navController.navigate(Screens.ChangeTheme.route)  },
                     modifier = Modifier.offset(y = -10.dp)
                 ){
-                    Text("Change")
+                    Text("Cambiar")
                 }
             }
 
