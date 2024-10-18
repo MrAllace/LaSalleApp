@@ -64,7 +64,7 @@ fun SettingsScreen(innerPadding : PaddingValues, navController: NavController){
             }
             AsyncImage(
                 model = ImageRequest.Builder(LocalContext.current)
-                    .data("https://parspng.com/wp-content/uploads/2022/12/studentpng.parspng.com-9.png")
+                    .data("https://images.app.goo.gl/UUxpyXepyXVktSK68")
                     .build(),
                 contentDescription = "Alumno",
                 modifier = Modifier.fillMaxWidth()
@@ -76,7 +76,7 @@ fun SettingsScreen(innerPadding : PaddingValues, navController: NavController){
                         topStart = 25.dp,
                         topEnd = 25.dp
                     )
-                    ).background(Color.White)
+                    ).background(Color.Black)
                     .height(150.dp),
                 contentScale = ContentScale.FillBounds
             )

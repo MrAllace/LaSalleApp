@@ -82,22 +82,22 @@ val newsList = listOf(
 
 val bottomNavBarItems = listOf(
     BottomNavigationItem(
-        title = "Home",
+        title = "Inicio",
         icon = Icons.Default.Home,
         route = Screens.Home.route
     ),
     BottomNavigationItem(
-        title = "Grades",
+        title = "Calificaciones",
         icon = Icons.Default.Menu,
         route = Screens.Grades.route
     ),
     BottomNavigationItem(
-        title = "Calendar",
+        title = "Calendario",
         icon = Icons.Default.DateRange,
         route = Screens.Calendar.route
     ),
     BottomNavigationItem(
-        title = "Settings",
+        title = "Configuración",
         icon = Icons.Default.Settings,
         route = Screens.Settings.route
     ),
